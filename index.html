@@ -8,16 +8,16 @@
 <body align:center>
 	<form>
 		<input id='code' type="text" placeholder="code">
-		<input id='sub' type="submit" value="Submit">
+		<input onclick="clicked(event);" id='sub' type="submit" value="Submit">
 	</form>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			$('#sub').click(function(){
-				if($('#code').val() == 'sanchitissexy'){
-					window.location.replace("http://pavleen.me/taskmates/app");
-				}
-			});
-		});
+		function clicked(event){
+			event.preventDefault();
+			if($('#code').val() == 'sanchitissexy'){
+				//alert('correct');
+				window.location.replace("http://pavleen.me/taskmates/app");
+			}
+		}
 	</script>
 
 
