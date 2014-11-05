@@ -49,13 +49,13 @@ $(document).ready(function(){
 		    window.location.href = link;
 		}
 		$(".taskx").click(function(event) {
-			alert('yo');
+			//alert('yo');
 			var id = event.target.id;
 			var task = id.split('-')[0];
 			var mate = id.split('-')[1];
-			sendMail(mate,task);
 			mate = Number(mate)+1;
-			alert(mate);
+			//alert(mate);
+			sendMail(mate,task);
 			if (mate>=nummates){
 				mate = 0;
 			}
